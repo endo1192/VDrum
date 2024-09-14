@@ -7,37 +7,37 @@ function main() {
     }
     const engine = new BABYLON.Engine(canvas, true);
 
-    const audiourl = '/music/ddn.mp3';
+    const audiourl = './music/ddn.mp3';
     const audio = new Audio(audiourl)
 
-    const bdurl = '/music/bd.mp3';
+    const bdurl = './music/bd.mp3';
     const bdaudio = new Audio(bdurl)
 
-    const cracynurl = '/music/cracyn.mp3';
+    const cracynurl = './music/cracyn.mp3';
     const cracynaudio = new Audio(cracynurl)
 
-    const cracyn2url = '/music/cracyn2.mp3';
+    const cracyn2url = './music/cracyn2.mp3';
     const cracyn2audio = new Audio(cracyn2url)
 
-    const flotamurl = '/music/flotam.mp3';
+    const flotamurl = './music/flotam.mp3';
     const flotamaudio = new Audio(flotamurl)
 
-    const hihatclurl = '/music/hihatcl.mp3';
+    const hihatclurl = './music/hihatcl.mp3';
     const hihatclaudio = new Audio(hihatclurl)
 
-    const hihatopurl = '/music/hihatop.mp3';
+    const hihatopurl = './music/hihatop.mp3';
     const hihatopaudio = new Audio(hihatopurl)
 
-    const hitamurl = '/music/hitam.mp3';
+    const hitamurl = './music/hitam.mp3';
     const hitamaudio = new Audio(hitamurl)
 
-    const lowtamurl = '/music/lowtam.mp3';
+    const lowtamurl = './music/lowtam.mp3';
     const lowtamaudio = new Audio(lowtamurl)
 
-    const ridecynurl = '/music/ridecyn.mp3';
+    const ridecynurl = './music/ridecyn.mp3';
     const ridecynaudio = new Audio(ridecynurl)
 
-    const snareurl = '/music/snare.mp3';
+    const snareurl = './music/snare.mp3';
     const snareaudio = new Audio(snareurl)
 
     function createScene() {
@@ -46,7 +46,7 @@ function main() {
         let Cube = null;
         
             // メッシュをロード
-        BABYLON.SceneLoader.ImportMeshAsync("", "/scene/", "drumset3.glb", scene).then((result) => {
+        BABYLON.SceneLoader.ImportMeshAsync("", "./scene/", "drumset3.glb", scene).then((result) => {
             
             result.meshes.forEach((mesh) => {
                 console.log("Loaded mesh name:", mesh.name);
