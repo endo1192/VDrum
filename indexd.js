@@ -167,6 +167,19 @@ function main() {
 
         
         camera.inputs.addMouseWheel();
+
+        // 左右・上下のドラッグ感度
+        camera.angularSensibilityX = 8000;  // デフォルトは1000。値を大きくすると感度が下がります。
+        camera.angularSensibilityY = 8000;
+
+        // パン操作の感度
+        camera.panningSensibility = 400;  // デフォルトは50。値を小さくすると感度が上がります。
+
+        // マウス感度を調整（回転速度）
+        camera.inputs.attached.mouse.angularSensibility = 17000; // 数値が小さいほど感度が高い
+
+        // キーボード移動速度の調整
+        camera.speed = 0.1; // 数値が大きいほど速く移動
     
     
         camera.setTarget(new BABYLON.Vector3(0, 2, 0));
